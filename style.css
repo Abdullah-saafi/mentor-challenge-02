@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --red-bg-: hsl(0, 78%, 62%);
+  --cyan-bg-: hsl(180, 62%, 55%);
+  --orange-bg-: hsl(34, 97%, 64%);
+  --blue-bg-: hsl(212, 86%, 64%);
+  --db-color-: hsl(234, 12%, 34%);
+  --lb-color-: hsl(229, 6%, 66%);
+  --lg-color-: hsl(0, 0%, 98%);
+}
+body {
+  background-color: var(--lg-color-);
+}
+.container {
+  max-width: 1440px;
+  margin: 20px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-text h2 {
+  color: var(--lb-color-);
+  font-weight: 200;
+  font-size: 2rem;
+}
+.hero-text h1 {
+  color: var(--db-color-);
+  font-weight: 600;
+  font-size: 2rem;
+  padding-top: 0;
+}
+
+.hero-text p {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--lb-color-);
+}
+
+.cards {
+  max-width: 1000px;
+  margin: auto auto;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  padding: 1.3rem;
+  position: relative;
+  max-height: 200px;
+  max-width: 300px;
+  margin: 15px auto;
+}
+
+.row1-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card h3 {
+  color: var(--db-color-);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card p {
+  color: var(--lb-color-);
+  font-size: 0.7rem;
+  padding: 0.4rem 4rem 1rem 0;
+}
+
+.card-img {
+  float: right;
+}
+
+.cgreen-card {
+  border-top: 5px solid var(--cyan-bg-);
+  top: 6rem;
+}
+.red-card {
+  border-top: 5px solid var(--red-bg-);
+}
+.blue-card {
+  border-top: 5px solid var(--blue-bg-);
+  top: 6rem;
+}
+.yellow-card {
+  border-top: 5px solid var(--orange-bg-);
+}
+
+@media screen and (min-width: 375px) and (max-width: 930px) {
+  .cgreen-card {
+    border-top: 5px solid var(--cyan-bg-);
+    top: 0;
+  }
+  .blue-card {
+    border-top: 5px solid var(--blue-bg-);
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-text h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  .hero-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .cgreen-card {
+    top: 0rem;
+  }
+  .blue-card {
+    top: 0rem;
+  }
+}
